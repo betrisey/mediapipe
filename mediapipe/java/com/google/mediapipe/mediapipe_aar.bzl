@@ -144,7 +144,7 @@ cat > $(OUTS) <<EOF
     _proto_java_src_generator(
         name = "object_proto",
         proto_src = "mediapipe/modules/objectron/calculators/proto/object.proto",
-        java_lite_out = "com/google/mediapipe/modules/objectron/calculators/proto/ObjectaProto.java",
+        java_lite_out = "com/google/mediapipe/modules/objectron/calculators/proto/ObjectProto.java",
         srcs = [
             "//mediapipe/framework/formats:protos_src",
             "//mediapipe/modules/objectron/calculators/proto:protos_src",
@@ -164,7 +164,7 @@ cat > $(OUTS) <<EOF
             "com/google/mediapipe/formats/annotation/proto/RasterizationProto.java",
             "com/google/mediapipe/modules/objectron/calculators/proto/ARCaptureMetadataProto.java",
             "com/google/mediapipe/modules/objectron/calculators/proto/AnnotationDataProto.java",
-            "com/google/mediapipe/modules/objectron/calculators/proto/ObjectaProto.java",
+            "com/google/mediapipe/modules/objectron/calculators/proto/ObjectProto.java",
         ],
         manifest = "AndroidManifest.xml",
         proguard_specs = ["//mediapipe/java/com/google/mediapipe/framework:proguard.pgcfg"],
