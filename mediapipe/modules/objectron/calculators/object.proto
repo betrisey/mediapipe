@@ -16,7 +16,7 @@ syntax = "proto3";
 
 package mediapipe;
 
-option java_package = "com.google.mediapipe.modules.objectron";
+option java_package = "com.google.mediapipe.modules.objectron.proto";
 option java_outer_classname = "ObjectProto";
 
 message KeyPoint {

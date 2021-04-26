@@ -16,7 +16,7 @@ syntax = "proto2";
 
 package mediapipe;
 
-option java_package = "com.google.mediapipe.modules.objectron";
+option java_package = "com.google.mediapipe.modules.objectron.proto";
 option java_outer_classname = "ARCaptureMetadataProto";
 
 // Info about the camera characteristics used to capture images and depth data.

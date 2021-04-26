@@ -124,7 +124,7 @@ cat > $(OUTS) <<EOF
     _proto_java_src_generator(
         name = "a_r_capture_metadata_proto",
         proto_src = "mediapipe/modules/objectron/calculators/a_r_capture_metadata.proto",
-        java_lite_out = "com/google/mediapipe/modules/objectron/calculators/ARCaptureMetadataProto.java",
+        java_lite_out = "com/google/mediapipe/modules/objectron/calculators/proto/ARCaptureMetadataProto.java",
         srcs = [
             "//mediapipe/framework/formats:protos_src",
             "//mediapipe/modules/objectron/calculators:protos_src",
@@ -134,7 +134,7 @@ cat > $(OUTS) <<EOF
     _proto_java_src_generator(
         name = "annotation_data_proto",
         proto_src = "mediapipe/modules/objectron/calculators/annotation_data.proto",
-        java_lite_out = "com/google/mediapipe/modules/objectron/calculators/AnnotationDataProto.java",
+        java_lite_out = "com/google/mediapipe/modules/objectron/calculators/proto/AnnotationDataProto.java",
         srcs = [
             "//mediapipe/framework/formats:protos_src",
             "//mediapipe/modules/objectron/calculators:protos_src",
@@ -144,7 +144,7 @@ cat > $(OUTS) <<EOF
     _proto_java_src_generator(
         name = "object_proto",
         proto_src = "mediapipe/modules/objectron/calculators/object.proto",
-        java_lite_out = "com/google/mediapipe/modules/objectron/calculators/ObjectaProto.java",
+        java_lite_out = "com/google/mediapipe/modules/objectron/calculators/proto/ObjectaProto.java",
         srcs = [
             "//mediapipe/framework/formats:protos_src",
             "//mediapipe/modules/objectron/calculators:protos_src",
@@ -162,9 +162,9 @@ cat > $(OUTS) <<EOF
             "com/google/mediapipe/formats/proto/DetectionProto.java",
             "com/google/mediapipe/formats/proto/LocationDataProto.java",
             "com/google/mediapipe/formats/annotation/proto/RasterizationProto.java",
-            "com/google/mediapipe/modules/objectron/calculators/ARCaptureMetadataProto.java",
-            "com/google/mediapipe/modules/objectron/calculators/AnnotationDataProto.java",
-            "com/google/mediapipe/modules/objectron/calculators/ObjectaProto.java",
+            "com/google/mediapipe/modules/objectron/calculators/proto/ARCaptureMetadataProto.java",
+            "com/google/mediapipe/modules/objectron/calculators/proto/AnnotationDataProto.java",
+            "com/google/mediapipe/modules/objectron/calculators/proto/ObjectaProto.java",
         ],
         manifest = "AndroidManifest.xml",
         proguard_specs = ["//mediapipe/java/com/google/mediapipe/framework:proguard.pgcfg"],
