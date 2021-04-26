@@ -125,6 +125,13 @@ mediapipe_proto_library(
     ],
 )
 
+# Expose the proto source files for building mediapipe AAR.
+filegroup(
+    name = "protos_src",
+    srcs = glob(["*.proto"]),
+    visibility = ["//mediapipe:__subpackages__"],
+)
+
 cc_library(
     name = "box_util",
     srcs = ["box_util.cc"],

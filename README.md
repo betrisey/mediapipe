@@ -4,6 +4,10 @@ title: Home
 nav_order: 1
 ---
 
+`bazel build -c opt --host_crosstool_top=@bazel_tools//tools/cpp:toolchain --fat_apk_cpu=arm64-v8a,armeabi-v7a --strip=ALWAYS mediapipe/examples/android/src/java/com/google/mediapipe/apps/aar_objectdetection3d:mp_objectdetection3d_aar`
+
+`bazel build -c opt mediapipe/graphs/object_detection_3d:mobile_gpu_binary_graph`
+
 ![MediaPipe](docs/images/mediapipe_small.png)
 
 --------------------------------------------------------------------------------

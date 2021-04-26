@@ -13,6 +13,7 @@ input_side_packet: "ANIMATION_ASSET:box_asset_name"
 input_side_packet: "MASK_TEXTURE:obj_texture"
 input_side_packet: "MASK_ASSET:obj_asset_name"
 output_stream: "output_video"
+output_stream: "lifted_objects"
 
 # Throttles the images flowing downstream for flow control. It passes through
 # the very first incoming image unaltered, and waits for downstream nodes
