@@ -16,6 +16,9 @@ syntax = "proto3";
 
 package mediapipe;
 
+option java_package = "com.google.mediapipe.modules.objectron.calculators.proto";
+option java_outer_classname = "ObjectProto";
+
 message KeyPoint {
   // The position of the keypoint in the local coordinate system of the rigid
   // object.

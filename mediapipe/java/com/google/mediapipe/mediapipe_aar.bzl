@@ -123,7 +123,7 @@ cat > $(OUTS) <<EOF
 
     _proto_java_src_generator(
         name = "a_r_capture_metadata_proto",
-        proto_src = "mediapipe/modules/objectron/calculators/a_r_capture_metadata.proto",
+        proto_src = "mediapipe/modules/objectron/calculators/proto/a_r_capture_metadata.proto",
         java_lite_out = "com/google/mediapipe/modules/objectron/calculators/proto/ARCaptureMetadataProto.java",
         srcs = [
             "//mediapipe/framework/formats:protos_src",
@@ -133,7 +133,7 @@ cat > $(OUTS) <<EOF
 
     _proto_java_src_generator(
         name = "annotation_data_proto",
-        proto_src = "mediapipe/modules/objectron/calculators/annotation_data.proto",
+        proto_src = "mediapipe/modules/objectron/calculators/proto/annotation_data.proto",
         java_lite_out = "com/google/mediapipe/modules/objectron/calculators/proto/AnnotationDataProto.java",
         srcs = [
             "//mediapipe/framework/formats:protos_src",
@@ -143,7 +143,7 @@ cat > $(OUTS) <<EOF
 
     _proto_java_src_generator(
         name = "object_proto",
-        proto_src = "mediapipe/modules/objectron/calculators/object.proto",
+        proto_src = "mediapipe/modules/objectron/calculators/proto/object.proto",
         java_lite_out = "com/google/mediapipe/modules/objectron/calculators/proto/ObjectaProto.java",
         srcs = [
             "//mediapipe/framework/formats:protos_src",
