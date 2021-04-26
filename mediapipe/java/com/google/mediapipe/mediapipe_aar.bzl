@@ -142,16 +142,6 @@ cat > $(OUTS) <<EOF
     )
 
     _proto_java_src_generator(
-        name = "belief_decoder_config_proto",
-        proto_src = "mediapipe/modules/objectron/calculators/belief_decoder_config.proto",
-        java_lite_out = "com/google/mediapipe/modules/objectron/calculators/BeliefDecoderConfigProto.java",
-        srcs = [
-            "//mediapipe/framework/formats:protos_src",
-            "//mediapipe/modules/objectron/calculators:protos_src",
-        ],
-    )
-
-    _proto_java_src_generator(
         name = "object_proto",
         proto_src = "mediapipe/modules/objectron/calculators/object.proto",
         java_lite_out = "com/google/mediapipe/modules/objectron/calculators/ObjectaProto.java",
@@ -174,7 +164,6 @@ cat > $(OUTS) <<EOF
             "com/google/mediapipe/formats/annotation/proto/RasterizationProto.java",
             "com/google/mediapipe/modules/objectron/calculators/ARCaptureMetadataProto.java",
             "com/google/mediapipe/modules/objectron/calculators/AnnotationDataProto.java",
-            "com/google/mediapipe/modules/objectron/calculators/BeliefDecoderConfigProto.java",
             "com/google/mediapipe/modules/objectron/calculators/ObjectaProto.java",
         ],
         manifest = "AndroidManifest.xml",

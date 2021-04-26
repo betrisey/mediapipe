@@ -16,9 +16,6 @@ syntax = "proto2";
 
 package mediapipe;
 
-option java_package = "com.google.mediapipe.modules.objectron";
-option java_outer_classname = "BeliefDecoderConfigProto";
-
 message BeliefDecoderConfig {
   optional float heatmap_threshold = 1 [default = 0.9];
   // Maximum distance in pixels between two local max heatmap values.
