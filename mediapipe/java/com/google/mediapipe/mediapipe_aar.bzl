@@ -127,7 +127,7 @@ cat > $(OUTS) <<EOF
         java_lite_out = "com/google/mediapipe/modules/objectron/calculators/proto/ARCaptureMetadataProto.java",
         srcs = [
             "//mediapipe/framework/formats:protos_src",
-            "//mediapipe/modules/objectron/calculators:protos_src",
+            "//mediapipe/modules/objectron/calculators/proto:protos_src",
         ],
     )
 
@@ -137,7 +137,7 @@ cat > $(OUTS) <<EOF
         java_lite_out = "com/google/mediapipe/modules/objectron/calculators/proto/AnnotationDataProto.java",
         srcs = [
             "//mediapipe/framework/formats:protos_src",
-            "//mediapipe/modules/objectron/calculators:protos_src",
+            "//mediapipe/modules/objectron/calculators/proto:protos_src",
         ],
     )
 
@@ -147,7 +147,7 @@ cat > $(OUTS) <<EOF
         java_lite_out = "com/google/mediapipe/modules/objectron/calculators/proto/ObjectaProto.java",
         srcs = [
             "//mediapipe/framework/formats:protos_src",
-            "//mediapipe/modules/objectron/calculators:protos_src",
+            "//mediapipe/modules/objectron/calculators/proto:protos_src",
         ],
     )
 
