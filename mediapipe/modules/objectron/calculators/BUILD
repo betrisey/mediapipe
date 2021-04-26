@@ -41,6 +41,15 @@ mediapipe_proto_library(
     ],
 )
 
+# Expose the proto source files for building mediapipe AAR.
+filegroup(
+    name = "protos_src",
+    srcs = ["object.proto",
+            "a_r_capture_metadata.proto",
+            "annotation_data.proto"],
+    visibility = ["//mediapipe:__subpackages__"],
+)
+
 mediapipe_register_type(
     base_name = "annotation",
     include_headers = ["mediapipe/modules/objectron/calculators/annotation_data.pb.h"],

@@ -16,8 +16,8 @@ syntax = "proto3";
 
 package mediapipe;
 
-import "mediapipe/modules/objectron/calculators/a_r_capture_metadata.proto";
-import "mediapipe/modules/objectron/calculators/object.proto";
+option java_package = "com.google.mediapipe.modules.objectron.calculators";
+option java_outer_classname = "AnnotationDataProto";
 
 // Projection of a 3D point on an image, and its metric depth.
 message NormalizedPoint2D {
